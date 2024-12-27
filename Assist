@@ -1,0 +1,8 @@
+Name: (Assist attacks)
+Type: regexp
+Pattern: >? ?([A-Z][a-z]*) attacks .*\.$
+
+Execute the following javascript:
+        //Base Assist Script
+        function assistDelay () { gwc.connection.send("!assist"); }
+            setTimeout(assistDelay, 3000)

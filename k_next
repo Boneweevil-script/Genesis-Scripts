@@ -1,0 +1,41 @@
+    var k = gwc.userdata.killing;
+    
+    // end check
+    if (k.step >= k.plan.length) {
+      gwc.connection.send("k_stop", true);
+      return;
+    }
+    
+    // initialize indices
+    k.step += 1;
+    k.substep = 0;
+    
+    // safety
+    if (k.step >= k.plan.length) {
+      gwc.connection.send("k_stop", true);
+      return;
+    }
+    
+    // execute ONE path item at a time
+    (function runPath() {
+      var path = k.plan[k.step].path;
+      var cmd = path[k.substep++];
+    
+      // finished this room
+      if (!cmd) {
+        gwc.connection.send("k_start", true);
+        return;
+      }
+    
+      // WAIT HANDLING (THIS IS THE KEY)
+      if (typeof cmd === 'object' && cmd.wait) {
+        setTimeout(runPath, cmd.wait);
+        return;
+      }
+    
+      // normal command
+      gwc.connection.send(cmd, true);
+    
+      // queue next path item
+      setTimeout(runPath, 0);
+    })();

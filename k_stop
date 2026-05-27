@@ -1,0 +1,6 @@
+     gwc.userdata.killing = gwc.userdata.killing || {};
+          
+        //deletes stored input
+          delete gwc.userdata.killing;
+        //communication with user
+          gwc.output.append('Script done.');

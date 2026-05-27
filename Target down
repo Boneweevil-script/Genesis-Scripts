@@ -1,0 +1,18 @@
+Name: ~Target Down
+Type: regexp
+Pattern: (died|panics and flees)
+
+gwc.userdata.killing = gwc.userdata.killing || {};
+          if (!gwc.userdata.killing.plan){
+            return;
+          }
+        
+        //checks where you are on the path, so it repeats the target for that location
+          var k = gwc.userdata.killing;
+          if (k.check) {
+            k.check.paths[k.check.paths.length] = k.check.last.concat(k.plan[k.step].path);
+            k.check.last = [];
+          }
+        
+        //starts the kill the next thing alias
+          gwc.connection.send("k_start", true);

@@ -1,0 +1,9 @@
+    if (args[1] === "kill") {
+        gwc.userdata.countrkill = "kill";
+        gwc.output.append('Count or Kill? Today you have woken up and chosen ' + gwc.userdata.countrkill + 'ing');
+    } else if (args[1] === "count" || args[1] === "ka") {
+        gwc.userdata.countrkill = "count";
+        gwc.output.append('Count or Kill? Today you have woken up and chosen ' + gwc.userdata.countrkill + 'ing');
+    } else {
+        gwc.output.append('Count or Kill? Today you have woken up and chosen ' + args[1] + 'ing. I must be honest, I am not exactly sure what that means');
+    }

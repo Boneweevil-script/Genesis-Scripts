@@ -1,0 +1,25 @@
+Name: ~Next room
+Type: regexp
+Pattern: (You find no such living creature|t find any (trolls|undeads|saurians|trolls|knights) here|is in your team|The corpse of an inspiring resolute messenger)
+
+Execute the following javascript:
+    gwc.userdata.killing = gwc.userdata.killing || {};
+          if (!gwc.userdata.killing.plan){
+            return;
+          }
+        
+        //checks where you are in your path, so it knows your next location
+          var k = gwc.userdata.killing;
+          if (k.check) {
+            k.check.paths[k.check.paths.length] =                                  
+            k.check.last.concat(k.plan[k.step].path);
+            k.check.last = [];
+          }
+        
+        //starts the move to next location alias
+        /* jshint ignore:start */
+          gwc.trigger.disable("~Next room")
+    //0.075
+          await wait(.225)
+          gwc.connection.send("k_next", true);
+          gwc.trigger.enable("~Next room")

@@ -1,0 +1,13 @@
+    gwc.userdata.killing = gwc.userdata.killing || {};
+          var k = gwc.userdata.killing;
+        
+        //communicates with you what's going on
+          if (!k.plan){
+            gwc.output.append("not killing");
+            return;
+          }
+        
+        //communicates with you where it is in the plan
+          gwc.output.append('step:' + k.step);
+        //tells you what to kill depending on where in the script you are
+          gwc.connection.send("!" + gwc.userdata.countrkill + " " + k.plan[k.step].kill);

@@ -1,0 +1,97 @@
+ gwc.userdata.killing = gwc.userdata.killing || {};
+                      var k = gwc.userdata.killing;
+                  
+                    //path:[‘step’,’step’…]to take to next room
+                    //kill:'human' to kill
+                    //repeat this pattern to take you through all the rooms in the area you are clearing
+                      k.plan = [
+            
+              {path:['s'],kill:'dwarf'},
+              {path:['s'],kill:'dwarf'},
+              {path:['enter tent'],kill:'dwarf'},
+              {path:['out'],kill:'dwarf'},
+              {path:['sw'],kill:'dwarf'},
+              {path:['enter tent'],kill:'dwarf'},
+              {path:['out'],kill:'dwarf'},
+              {path:['e'],kill:'dwarf'},
+              {path:['enter tent'],kill:'dwarf'},
+              {path:['out'],kill:'dwarf'},
+              {path:['e'],kill:'dwarf'},
+              {path:['enter tent'],kill:'dwarf'},
+              {path:['out'],kill:'dwarf'},
+              {path:['se'],kill:'dwarf'},
+              {path:['enter tent'],kill:'dwarf'},
+              {path:['out'],kill:'dwarf'},
+              {path:['w'],kill:'dwarf'},
+              {path:['enter tent'],kill:'dwarf'},
+              {path:['out'],kill:'dwarf'},
+              {path:['w'],kill:'dwarf'},
+              {path:['enter tent'],kill:'dwarf'},
+              {path:['out'],kill:'dwarf'},
+              {path:['w'],kill:'dwarf'},
+              {path:['enter tent'],kill:'dwarf'},
+              {path:['out'],kill:'dwarf'},
+              {path:['w'],kill:'dwarf'},
+              {path:['enter tent'],kill:'dwarf'},
+              {path:['out'],kill:'dwarf'},
+              {path:['sw'],kill:'dwarf'},
+              {path:['enter tent'],kill:'dwarf'},
+              {path:['out'],kill:'dwarf'},
+              {path:['e'],kill:'dwarf'},
+              {path:['enter tent'],kill:'dwarf'},
+              {path:['out'],kill:'dwarf'},
+              {path:['e'],kill:'dwarf'},
+              {path:['enter tent'],kill:'dwarf'},
+              {path:['out'],kill:'dwarf'},
+              {path:['e'],kill:'dwarf'},
+              {path:['enter tent'],kill:'dwarf'},
+              {path:['out'],kill:'dwarf'},
+              {path:['e'],kill:'dwarf'},
+              {path:['enter tent'],kill:'dwarf'},
+              {path:['out'],kill:'dwarf'},
+              {path:['e'],kill:'dwarf'},
+              {path:['enter tent'],kill:'dwarf'},
+              {path:['out'],kill:'dwarf'},
+              {path:['e'],kill:'dwarf'},
+              {path:['enter tent'],kill:'dwarf'},
+              {path:['out'],kill:'dwarf'},
+              {path:['sw'],kill:'dwarf'},
+              {path:['enter tent'],kill:'dwarf'},
+              {path:['out'],kill:'dwarf'},
+              {path:['w'],kill:'dwarf'},
+              {path:['enter tent'],kill:'dwarf'},
+              {path:['out'],kill:'dwarf'},
+              {path:['w'],kill:'dwarf'},
+              {path:['enter tent'],kill:'dwarf'},
+              {path:['out'],kill:'dwarf'},
+              {path:['w'],kill:'dwarf'},
+              {path:['enter tent'],kill:'dwarf'},
+              {path:['out'],kill:'dwarf'},
+              {path:['w'],kill:'dwarf'},
+              {path:['enter tent'],kill:'dwarf'},
+              {path:['out'],kill:'dwarf'},
+              {path:['se'],kill:'dwarf'},
+              {path:['enter tent'],kill:'dwarf'},
+              {path:['out'],kill:'dwarf'},
+              {path:['e'],kill:'dwarf'},
+              {path:['enter tent'],kill:'dwarf'},
+              {path:['out'],kill:'dwarf'},
+              {path:['e'],kill:'dwarf'},
+              {path:['enter tent'],kill:'dwarf'},
+              {path:['out'],kill:'dwarf'},
+              {path:['sw'],kill:'dwarf'},
+              {path:['enter tent'],kill:'dwarf'},
+              {path:['out'],kill:'dwarf'},
+              {path:['n','n','n','n','n','n','n'],kill:'dwarf'},
+              {path:['n'],kill:'dwarf'},
+
+ 
+        
+          
+          
+                        //...
+                      ];
+          
+                      k.step = -1;
+                    //calls on the next step alias
+                      gwc.connection.send("k_next", true);

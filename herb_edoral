@@ -1,0 +1,679 @@
+    gwc.userdata.killing = gwc.userdata.killing || {};
+    var k = gwc.userdata.killing;
+    
+    k.plan = [
+      {
+        path: [
+          's',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },
+      {
+        path: [
+          'w',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },
+        {
+        path: [
+          's',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },
+          {
+        path: [
+          's',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },
+          {
+        path: [
+          'e',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'e',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          's',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'w',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'w',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          's',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'e',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'e',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'e',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'e',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'e',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'e',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'e',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          's',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'w',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'w',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'w',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'w',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'w',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'w',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'w',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      }, {
+        path: [
+          'se',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'e',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'e',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'e',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          's',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'w',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'se',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'se',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'n',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'n',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'e',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          's',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          's',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'e',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'n',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'n',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'n',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'n',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'e',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          's',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          's',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          's',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          's',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'e',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+          path: [
+            'n',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+          path: [
+            'n',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+          path: [
+            'n',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+          path: [
+            'e',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+        path: [
+          's',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          's',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          's',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'e',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'n',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'e',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'n',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'n',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'n',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'w',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'n',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'e',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'e',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },  {
+          path: [
+            's',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },  {
+          path: [
+            's',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },  {
+          path: [
+            's',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },  {
+          path: [
+            'ne',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+        path: [
+          'n',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'n',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'e',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          's',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+        path: [
+          'ne',
+          { wait: 1000 },
+          'search here for herbs'
+        ]
+      },    {
+          path: [
+            'ne',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+          path: [
+            'w',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+          path: [
+            'n',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+          path: [
+            'e',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+          path: [
+            'nw','w','w','s','s',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+          path: [
+            'n',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+          path: [
+            'n',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+          path: [
+            'e',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+          path: [
+            'e',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+          path: [
+            'n',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+          path: [
+            'w',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+          path: [
+            'w',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+          path: [
+            'n',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+          path: [
+            'e',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+          path: [
+            'e',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+          path: [
+            'e',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+          path: [
+            'n',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+          path: [
+            'n',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+          path: [
+            'w',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+          path: [
+            'w',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+          path: [
+            'w',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+          path: [
+            's',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+          path: [
+            'n','n',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+          path: [
+            'e',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+          path: [
+            'e',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+          path: [
+            'ne',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+          path: [
+            'w',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+          path: [
+            'n', 'e',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+          path: [
+            'w',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+          path: [
+            'w',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+          path: [
+            'w',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+          path: [
+            's',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+          path: [
+            'n', 'n',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+          path: [
+            'e',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+          path: [
+            'e',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },    {
+          path: [
+            'e',
+            { wait: 1000 },
+            'search here for herbs'
+          ]
+        },
+    ];
+    
+    k.step = -1;
+    gwc.connection.send("k_next", true);

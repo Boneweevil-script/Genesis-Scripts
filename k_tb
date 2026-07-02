@@ -1,0 +1,18 @@
+     gwc.userdata.killing = gwc.userdata.killing || {};
+                          var k = gwc.userdata.killing;
+                      
+  
+  k.plan = [
+      {path:[],kill: 'human'},
+      {path:["sw"],kill: 'human'},
+      {path:["s"],kill: 'human'},
+      {path:["se"],kill: 'human'},
+      {path:["ne"],kill: 'human'},
+      {path:["n"],kill: 'human'},
+      {path:["w"],kill: 'human'}
+  ];
+  
+  k.got = 0;
+  k.step = -1;
+  
+  gwc.connection.send("k_next", true);

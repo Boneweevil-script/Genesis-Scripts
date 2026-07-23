@@ -1,0 +1,28 @@
+     gwc.userdata.killing = gwc.userdata.killing || {};
+                          var k = gwc.userdata.killing;
+                      
+  
+  k.plan = [
+      {path:['n','w'],kill: 'human'},
+      {path:['e','nw'],kill: 'human'},
+      {path:['se','n'],kill: 'human'},
+      {path:['s','ne'],kill: 'human'},
+      {path:['sw','e'],kill: 'human'},
+      {path:['w'],kill: 'human'},
+      {path:['s'],kill: 'human'},
+      {path:['s'],kill: 'human'},
+      {path:['sw'],kill: 'human'},
+      {path:['n'],kill: 'human'},
+      {path:['s','w'],kill: 'human'},
+      {path:['e','s'],kill: 'human'},
+      {path:['n','ne','se'],kill: 'human'},
+      {path:['n'],kill: 'human'},
+      {path:['s','e'],kill: 'human'},
+      {path:['w','s'],kill: 'human'},
+      {path:['n','nw','n'],kill: 'human'}
+  ];
+  
+  k.got = 0;
+  k.step = -1;
+  
+  gwc.connection.send("k_next", true);

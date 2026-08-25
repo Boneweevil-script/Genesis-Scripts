@@ -1,0 +1,47 @@
+     gwc.userdata.killing = gwc.userdata.killing || {};
+                  var k = gwc.userdata.killing;
+      
+                //identifying first target within this script
+              if (gwc.userdata.countrkill === "count") {
+                  var target = "elves";
+              } else {
+                  var target = args[1] + " elf";
+              }
+      
+                //path:[‘step’,’step’…]to take to next room
+                //kill:target to kill
+                //repeat this pattern to take you through all the rooms in the area you are clearing
+                  k.plan = [
+                  {path:['n'],kill:target},
+  {path:['w'],kill:target},
+  {path:['w'],kill:target},
+  {path:['se'],kill:target},
+  {path:['nw','w'],kill:target},
+  {path:['se'],kill:target},
+  {path:['nw','sw'],kill:target},
+  {path:['ne','w'],kill:target},
+  {path:['w'],kill:target},
+  {path:['e','sw'],kill:target},
+  {path:['ne','n'],kill:target},
+  {path:['w'],kill:target},
+  {path:['e','n'],kill:target},
+  {path:['w'],kill:target},
+  {path:['e','nw'],kill:target},
+  {path:['se','e'],kill:target},
+  {path:['n'],kill:target},
+  {path:['s','e'],kill:target},
+  {path:['ne'],kill:target},
+  {path:['sw','s'],kill:target},
+  {path:['ne'],kill:target},
+  {path:['sw','s'],kill:target},
+  {path:['ne'],kill:target},
+  {path:['sw','e','e'],kill:target},
+  
+  
+  
+                  
+                                  ];
+      
+                  k.step = -1;
+                //calls on the next step alias
+                  gwc.connection.send("k_next", true);
